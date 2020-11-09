@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+	<h1>Ajouter une recette</h1>
+
+	{{ form_rest(formRecette) }}
+
+	{{ form_start(formRecette) }}
+	<input type="reset" class="btn btn-secondary" value="Annuler">
+	<input type="submit" class="btn btn-success" value="Enregistrer">
+	{{ form_end(formRecette) }}
+</div>
+{% endblock %}
